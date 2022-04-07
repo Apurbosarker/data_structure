@@ -1,12 +1,14 @@
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
+
 struct node
 {
     int info;
     struct node *left;
     struct node *right;
 };
+
 struct node *new_node(int data)
 {
     struct node *ptr=(struct node*)malloc(sizeof(struct node));
